@@ -1,6 +1,7 @@
 # Daikibo: downtime das máquinas em 4 fábricas
 
 Análise dos dados de telemetria das máquinas da Daikibo, empresa com fábricas em Tóquio, Osaka, Berlim e Shenzhen.
+![Dashboard geral](daikibo_geral.jpg)
 
 ## A pergunta
 
@@ -37,6 +38,7 @@ Depois fiz dois gráficos de barras, "Downtime by plant" (por fábrica) e "Downt
 | Berlim | 20 |
 
 Ao selecionar a Seiko no painel, o gráfico de baixo mostra uma única máquina com inatividade: o LaserWelder, com 480 minutos. Todos os outros tipos ficam em 0.
+![Dashboard com a Seiko selecionada](daikibo_seiko.jpg)
 
 ## Conclusões
 
