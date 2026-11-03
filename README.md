@@ -2,8 +2,6 @@
 
 Análise dos dados de telemetria das máquinas da Daikibo, empresa com fábricas em Tóquio, Osaka, Berlim e Shenzhen.
 
-![Dashboard no Tableau](imagens/dashboard_tableau.png)
-
 ## A pergunta
 
 A Daikibo coletou durante um mês as mensagens das máquinas de 4 fábricas (Tóquio, Osaka, Berlim e Shenzhen) e queria responder duas perguntas:
