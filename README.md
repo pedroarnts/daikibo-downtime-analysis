@@ -2,9 +2,14 @@
 
 Análise dos dados de telemetria das máquinas da Daikibo, empresa com fábricas em Tóquio, Osaka, Berlim e Shenzhen.
 
+![Dashboard no Tableau](imagens/dashboard_tableau.png)
+
 ## A pergunta
 
-A Daikibo coletou durante um mês as mensagens das máquinas de 4 fábricas (Tóquio, Osaka, Berlim e Shenzhen) e queria saber duas coisas: em qual fábrica as máquinas ficaram mais tempo com problema e, dentro dela, quais máquinas falham mais.
+A Daikibo coletou durante um mês as mensagens das máquinas de 4 fábricas (Tóquio, Osaka, Berlim e Shenzhen) e queria responder duas perguntas:
+
+1. Em qual fábrica as máquinas ficaram mais tempo com problema?
+2. Quais máquinas dessa fábrica mais falham?
 
 ## Os dados
 
@@ -33,9 +38,23 @@ Depois fiz dois gráficos de barras, "Downtime by plant" (por fábrica) e "Downt
 | Meiyo (Tóquio) | 110 |
 | Berlim | 20 |
 
-A Seiko é a fábrica com mais inatividade, e todos os 480 minutos vêm de um único tipo de máquina, o LaserWelder. Na Shenzhen, que vem em segundo, quase tudo é do LaserCutter (390 dos 420 minutos).
+Ao selecionar a Seiko no painel, o gráfico de baixo mostra uma única máquina com inatividade: o LaserWelder, com 480 minutos. Todos os outros tipos ficam em 0.
 
-As duas primeiras têm o problema concentrado em equipamentos a laser. Os dados não explicam o motivo, mas é por aí que eu começaria a investigar. Também perguntaria à Daikibo o que `unhealthy` significa na prática (quebra ou só alerta), porque isso muda como o resultado deve ser lido. Por isso falo em inatividade "potencial".
+## Conclusões
+
+O que os dados mostram:
+
+* A Seiko (Osaka) é a fábrica com mais inatividade, e todo esse tempo vem de um único tipo de máquina, o LaserWelder.
+* A Shenzhen vem logo atrás (420 min) e também se concentra em um equipamento a laser: o LaserCutter (390 min).
+
+O que pode explicar (hipótese, os dados não provam):
+
+* Pode haver um problema comum aos equipamentos a laser, como o modelo, a manutenção ou o ambiente.
+
+O que eu recomendaria:
+
+* Investigar primeiro o LaserWelder da Seiko e o LaserCutter da Shenzhen.
+* Perguntar à Daikibo o que `unhealthy` significa na prática: quebra ou apenas alerta.
 
 ## Cuidados com os dados
 
