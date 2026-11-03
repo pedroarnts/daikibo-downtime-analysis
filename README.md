@@ -1,6 +1,6 @@
 # Daikibo: downtime das máquinas em 4 fábricas
 
-Exercício de análise de dados de uma escola internacional. A Daikibo é a empresa do cenário, e os dados vieram prontos com o exercício.
+Análise dos dados de telemetria das máquinas da Daikibo, empresa com fábricas em Tóquio, Osaka, Berlim e Shenzhen.
 
 ![Dashboard no Tableau](imagens/dashboard_tableau.png)
 
